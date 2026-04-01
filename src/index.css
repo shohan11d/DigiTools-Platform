@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
+
+
+button:hover,
+.btn-primary:hover,
+.btn:hover,
+a:hover {
+  color: #fff;
+  background-color: #7c2aed;
+  transform: translateY(-1px);
+}
+
+
+
+a:hover {
+  color: #7c2aed;
+  text-decoration: underline;
+}
+
+
+
+button:focus,
+.btn:focus,
+.btn-primary:focus,
+a:focus {
+  outline: 2px solid rgba(126, 34, 206, 0.5);
+  outline-offset: 2px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white px-4 py-2 rounded-full;
+  }
+  .custom-container {
+    @apply max-w-[1200px] mx-auto;
+  }
+}
+
+@theme {
+  /* This creates bg-brand, text-brand, border-brand, etc. */
+  --color-primary: #9514fa;
+  --color-secondary: #4f39f6;
+
+  /* This creates bg-brand-dark */
+  --color-brand-dark: #0c85d0;
+
+  /* Multishade naming (creates bg-accent-500) */
+  --color-accent-500: oklch(0.705 0.191 25.331);
+}

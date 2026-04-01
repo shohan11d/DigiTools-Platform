@@ -13,8 +13,8 @@
 - Don't ask about mark distribution in the group. We don't provide it.  
 - Don't post assignment feedback after you receive it. If you face any problem or have any complaints then join a support session and discuss it.  
 - Don’t use any lorem ipsum text, rather use relevant and meaningful text content.  
-- You can change the color if you want but remember that it should not be a gobindo color.  t- Use at least 8 git commits with meaningful messages.  
-tst
+- You can change the color if you want but remember that it should not be a gobindo color.  
+- Use at least 8 git commits with meaningful messages.  
 
 ---
 
